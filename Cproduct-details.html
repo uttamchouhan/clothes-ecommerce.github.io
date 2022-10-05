@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clothes.css">
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Chauhan</title>
+   
+</head>
+<body>
+
+
+      <div class="container">
+         <div class="navbar">
+            <div class="logo">
+                <img src="bvlgari.jpg" width="80px">
+            </div>
+            <nav>
+                <ul id="MenuItem">
+                    <li><a href="clothes.html">Home</a></li>
+                    <li><a href="Product.html">Product</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                </ul>
+            </nav>
+            <img src="cart.png" alt="" width="30px" height="30px">
+            <img src="menubar.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+     </div>
+<!------------------- Single product detail ---------------------->
+     <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="denimformen.jfif" width="100%" id="ProductImg">
+
+            </div>
+            <div class="col-2">
+                <p>Home / Shirt</p>
+                <h2>Denim Shirt</h2>
+                <h4>$99.00</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>X</option>
+                    <option>Medium</option>
+                    <option>Small</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Add to Cart</a>
+                <h3>Product Details  <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>Give your style upgrade with the HRX Men's Active Denim Shirt.</p>
+            </div>
+        </div>
+     </div>
+
+<!----------------- Title ------------------>
+     <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <a href="Product.html"><p>View more</p></a>
+        </div>
+     </div>
+
+<!----------------- Products ------------------>
+     <div class="small-container">
+        <!--<h2 class="title">Featured Product</h2>-->
+        <div class="row">
+            <div class="col-4">
+                <img src="fashionclothes.jfif" >
+                <h4>One-Piece</h4>
+                <div class="rating">
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                </div>
+                <p>$60.00</p>
+
+            </div>
+            <div class="col-4">
+               <img src="class3.jpg" >
+               <h4>Top Plus Shoots</h4>
+               <div class="rating">
+                  <i class="fa fa-star" ></i>
+                  <i class="fa fa-star" ></i>
+                  <i class="fa fa-star" ></i>
+                  <i class="fa fa-star" ></i>
+                  <i class="fa fa-star-half-o" ></i>
+               </div>
+               <p>$90.00</p>
+
+           </div>
+           <div class="col-4">
+               <img src="kaboompics_Stylish Asian Fashion Model.jpg" >
+               <h4>Gown</h4>
+               <div class="rating">
+                  <i class="fa fa-star" ></i>
+                  <i class="fa fa-star" ></i>
+                  <i class="fa fa-star" ></i>
+                  <i class="fa fa-star" ></i>
+                  <i class="fa fa-star-o" ></i>
+               </div>
+               <p>$56.00</p>
+
+           </div>
+           <div class="col-4">
+               <a href="Bproduct-detail.html"><img src="image1.webp"></a>
+               <h4>Chex Shirt</h4>
+               <div class="rating">
+                  <i class="fa fa-star" ></i>
+                  <i class="fa fa-star" ></i>
+                  <i class="fa fa-star" ></i>
+                  <i class="fa fa-star" ></i>
+                  <i class="fa fa-star-o" ></i>
+               </div>
+               <p>$185.00</p>
+
+           </div>
+        </div>
+    </div>
+    <!----------- footer -------------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Andriod and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="playstore.png">
+                        <img src="AppStore.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                   <img src="bvlgari.jpg" width="50px">
+                    <p>Our Purpose Is To Sustainably Make the pleasure and Benefits of sports Accessible to the many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Link</h3>
+                   <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                   </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                   <ul>
+                    <li>Twitter </li>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                   </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">Copyright 2020 - Easy Tutorials</p>
+        </div>
+    </div>
+    <!--------------- Js For Toggle Menu ------------------------->
+    <script>
+        var MenuItem = document.getElementById("MenuItem");
+
+        MenuItem.style.maxHeight = "0px";
+
+        function menutoggle()
+        {
+            if(MenuItem.style.maxHeight == "0px")
+            {
+                MenuItem.style.maxHeight = "200px";
+            }
+
+            else
+            {
+                MenuItem.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+<!------------------ JS for product gallery --------------------->
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function()
+         {
+            ProductImg.src = SmallImg[0].src;
+         }
+
+         SmallImg[1].onclick = function()
+         {
+            ProductImg.src = SmallImg[1].src;
+         }
+
+         SmallImg[2].onclick = function()
+         {
+            ProductImg.src = SmallImg[2].src;
+         }
+         
+         SmallImg[3].onclick = function()
+         {
+            ProductImg.src = SmallImg[3].src;
+         }
+    </script>
+
+</body>
+</html>
